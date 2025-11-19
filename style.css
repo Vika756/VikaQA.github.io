@@ -1,0 +1,95 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Карточка */
+.card {
+  background-color: #fff;
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Аватар */
+.avatar img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6c63ff;
+  margin-bottom: 15px;
+}
+
+/* Заголовок и должность */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #333;
+}
+.position {
+  font-size: 1rem;
+  color: #6c63ff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* О себе */
+.about {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Контакты */
+.contacts a {
+  display: block;
+  margin: 8px 0;
+  color: #444;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+.contacts a:hover {
+  color: #6c63ff;
+}
+.contacts i {
+  margin-right: 8px;
+  color: #6c63ff;
+}
+
+/* Соцсети */
+.social {
+  margin-top: 15px;
+}
+.social a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: #555;
+  transition: color 0.3s;
+}
+.social a:hover {
+  color: #6c63ff;
+}
+
+/* Адаптация */
+@media(max-width: 370px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}
